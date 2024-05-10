@@ -1,0 +1,17 @@
+name: Jail
+version: '1.0-SNAPSHOT'
+main: org.wasalona.jailplugin.Jail
+api-version: '1.16'
+load: STARTUP
+description: Plugin to add the ability to put player in prison
+author: Ajuuu
+website: wasalona.org
+commands:
+  jail:
+    description: Primary command for jail plugin
+    usage: |
+      /jail <playername> <cellNumber> - puts the player in the determined cell
+permissions:
+  jail.jail:
+    description: Gives access to all jail commands
+    default: op
