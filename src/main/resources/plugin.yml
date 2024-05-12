@@ -13,5 +13,8 @@ commands:
       /jail <playername> <cellNumber> - puts the player in the determined cell
 permissions:
   jail.jail:
-    description: Gives access to all jail commands
+    description: Gives access to the command used for jailing a player
+    default: op
+  jail.free:
+    description: Gives access to the command used for freeing a player from jail
     default: op

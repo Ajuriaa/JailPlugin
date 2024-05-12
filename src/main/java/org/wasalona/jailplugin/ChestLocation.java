@@ -6,31 +6,27 @@ import org.bukkit.World;
 
 public class ChestLocation {
     public static Location getChest(int number) {
-        World world = Bukkit.getServer().getWorld("World");
+        World world = Bukkit.getServer().getWorld("New World");
 
         switch (number) {
             case 1:
                 return new Location(world, -416, 69, 472);
-//            case 2:
-//                return  new Location(world, 0, 0, 0);
-//            case 3:
-//                return "-429 62 484";
-//            case 4:
-//                return "-423 62 484";
-//            case 5:
-//                return "-418 62 484";
-//            case 6:
-//                return "-419 62 472";
-//            case 7:
-//                return "-423 62 472";
-//            case 8:
-//                return "-429 62 472";
-//            case 9:
-//                return "-434 62 472";
-//            case 10:
-//                return "-438 62 472";
+            case 2:
+                return new Location(world, -416, 67, 472);
+            case 3:
+                return new Location(world, -416, 69, 475);
+            case 4:
+                return new Location(world, -416, 67, 475);
+            case 5:
+                return new Location(world, -416, 69, 478);
+            case 6:
+                return new Location(world, -416, 67, 478);
+            case 7:
+                return new Location(world, -416, 69, 481);
+            case 8:
+                return new Location(world, -416, 67, 481);
             default:
-                return new Location(world, -416, 69, 472);
+                return new Location(world, -416, 67, 484);
         }
     }
 }
