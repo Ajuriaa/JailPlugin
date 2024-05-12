@@ -106,7 +106,7 @@ public final class Jail extends JavaPlugin implements CommandExecutor, Listener 
             target.getInventory().clear();
             executeCommand("curios clear " + target.getName());
             executeCommand("lp user " + target.getName() + " permission set home.tp false");
-            executeCommand("lp user " + target.getName() + "meta setprefix 100 \"&6&l[&c&lPRISIONERO&6&l] &f\"");
+            executeCommand("lp user " + target.getName() + " meta setprefix 100 \"&6&l[&c&lPRISIONERO&6&l] &f\"");
 
             // Update the chest state to reflect the changes
             chest.update(true, true);
@@ -155,7 +155,7 @@ public final class Jail extends JavaPlugin implements CommandExecutor, Listener 
                 }
             }
             executeCommand("lp user " + target.getName() + " permission unset home.tp");
-            executeCommand("lp user " + target.getName() + "meta setprefix 100");
+            executeCommand("lp user " + target.getName() + " meta setprefix 100");
 
             // Update the chest state to reflect the changes
             chest.update(true, true);
