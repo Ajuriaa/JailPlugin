@@ -155,7 +155,7 @@ public final class Jail extends JavaPlugin implements CommandExecutor, Listener 
                 }
             }
             executeCommand("lp user " + target.getName() + " permission unset home.tp");
-            executeCommand("lp user " + target.getName() + " meta setprefix 100");
+            executeCommand("lp user " + target.getName() + " meta removeprefix 100");
 
             // Update the chest state to reflect the changes
             chest.update(true, true);
