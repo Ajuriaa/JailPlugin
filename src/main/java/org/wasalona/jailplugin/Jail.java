@@ -164,7 +164,7 @@ public final class Jail extends JavaPlugin implements CommandExecutor, Listener 
         }
 
         target.teleport(new Location(Bukkit.getWorld("New World"), -445, 63, 494));
-        target.sendMessage(ChatColor.GREEN + "You have been freed from jail!");
+        target.sendMessage(ChatColor.GREEN + "You have been freed from jail! Be good.");
         return true;
     }
 }
